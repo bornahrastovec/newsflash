@@ -1,0 +1,60 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap");
+body {
+  font-family: 'Playfair Display', serif;
+  margin: 0;
+  background-color: #AEB8FE;
+}
+
+.navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-decoration: none;
+  background-color: #27187E;
+}
+
+.navbar li {
+  list-style-type: none;
+  margin: 20px;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+}
+
+.nf-grid {
+  margin: 20px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(360px, 1fr))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+  grid-gap: 2rem;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+  min-height: 350px;
+  min-width: nf-card;
+}
+
+.nf-card {
+  text-decoration: none;
+  color: white;
+  background-color: #758BFD;
+  border-radius: 15px;
+  font-family: 'Roboto Slab', serif;
+}
+
+.nf-card-hover:hover {
+  background-color: #758BFD;
+  -webkit-box-shadow: 10px 10px 10px gray;
+          box-shadow: 10px 10px 10px gray;
+}
+
+.nf-card-body {
+  padding: 20px;
+}
+/*# sourceMappingURL=main.css.map */

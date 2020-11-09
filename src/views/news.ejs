@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Newsflash</title>
+    <link rel="stylesheet" type="text/css" href="/css/main.css">
+
+</head>
+<body>
+    <%- include('navbar') -%>
+        <div class="nf-grid">
+                <% articles.forEach((article, index) => { %> 
+                    <div class="nf-card nf-card-hover">
+                        <div class="nf-card-media-top">
+                            <img src="<%- article.urlToImage %>">
+                        </div>
+                        <div class="nf-card-body">
+                            <h3 class="nf-card-title"><%- article.title %></h3>
+                            <p><%- article.description%><p>
+                        </div>
+                        <p>Author: <%- article.author %></p>
+                        <p>Published: <%- article.publishedAt %></p>
+                    </div>
+                <% }) %>;
+        </div>
+
+</body>
+</html>
